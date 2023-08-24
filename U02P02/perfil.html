@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <h1>Formulario de Datos personales</h1>
+    <hr>
+    <h4>En el siguiete formulario debera completar los campos con los datos que se le pida.</h4>
+    <form action="accion.php"></form>
+    <hr>
+    <fieldset>
+        <legend>Informacion Personal</legend>
+        <label for="soloLectura">Rol:</label>
+        <input type="text" name="Rol" id="soloLectura" readonly value="ESTUDIANTE">
+        <br>
+        <label for="nombre">Nombre Completo: </label>
+        <input type="text" name="nombre" id="Nombre Completo" placeholder="Ingrese su nombre y apellido" size="22">
+        <br>
+        <label for="mail"> Correo Electronico: </label>
+        <input type="text" name="mail" id="mail" placeholder="Ingrese su Mail">
+        <br>
+        <label for="edad">Edad: </label>
+        <input type="text" name="edad" id="edad" placeholder="Ingrese su edad">
+        <br>
+        <label for="nacionalidad">Nacionalidad: </label>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="Argentina" selected>Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+        <br>
+        <label for="trabajo">Condicion Laboral: </label>
+        <select name="condicionLaboral" id="condicionLaboral">
+            <option value="desempleado" selected>Desempleado </option>
+            <option value="en busqueda">En busqueda laboral</option>
+            <option value="partTime">Trabajo part time</option>
+            <option value="fullTime">Trabajo full time</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Gustos Personales</legend>
+        <label for="musica">Gustos musicales: </label>
+        <input type="text" name="Gustos" id="Gustos" placeholder="Rock">
+        <br>
+        <label for="comida">Comida Favorita:</label>
+        <select name="comida" id="comida">
+            <option value="Pizza">Pizza</option>
+            <option value="Hamburguesa" selected>Hamburguesa</option>
+            <option value="Pastas">Pastas</option>
+            <option value="Milanesa">Milanesa</option>
+            <option value="Tarta">Tarta de verduras</option>
+        </select>
+        <br>
+        <label for="checkbox">Recordar mis datos </label>
+        <input type="checkbox" name="Check" id="Check"> <br />
+        <input type="submit" value="Enviar">
+    </fieldset> 
+     
+
+   
+
+</body>
+
+</html>
